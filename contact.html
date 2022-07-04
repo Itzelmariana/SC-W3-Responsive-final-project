@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script
-      type="text/javascript"
-      src="https://codesandbox.io/public/sse-hooks/sse-hooks.f648b14c15c640a14a557113a991cb8d.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://codesandbox.io/static/js/banner.be879265d.js"
-    ></script>
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -76,22 +67,59 @@
     <div class="content-container container">
       <div class="content">
         <h1 class="mb-5">Let's get in touch!</h1>
-        <h3>Email</h3>
-        <p>
-          <a href="mailto:patricia@gmail.com"> patricia@gmail.com </a>
-        </p>
-        <h3>Twitter</h3>
-        <p>
-          <a href="https://www.twitter.com/patricia" target="_blank">
-            @patricia
-          </a>
-        </p>
-        <h3>Instagram</h3>
-        <p>
-          <a href="https://www.instagram.com/patricia.codes" target="_blank">
-            @patricia.codes
-          </a>
-        </p>
+        <div class="row">
+          <div class="col-md-8">
+            <form
+              action="https://formspree.io/f/mwkalajy"
+              method="POST"
+              class="border p-3 rounded mb-3"
+            >
+              <div class="mb-3">
+                <label class="form-label"> Your email: </label>
+                <input
+                  type="email"
+                  name="_replyto"
+                  class="form-control"
+                  required
+                  autofocus
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label"> Your message: </label>
+                <textarea
+                  name="message"
+                  class="form-control"
+                  required
+                ></textarea>
+              </div>
+
+              <!-- your other form fields go here -->
+
+              <button type="submit" class="btn btn-branding">Send</button>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <h3>Email</h3>
+            <p>
+              <a href="mailto:patricia@gmail.com"> patricia@gmail.com </a>
+            </p>
+            <h3>Twitter</h3>
+            <p>
+              <a href="https://www.twitter.com/patricia" target="_blank">
+                @patricia
+              </a>
+            </p>
+            <h3>Instagram</h3>
+            <p>
+              <a
+                href="https://www.instagram.com/patricia.codes"
+                target="_blank"
+              >
+                @patricia.codes
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <footer class="container">
@@ -116,7 +144,7 @@
           class="email-link"
           title="Email Patricia"
         >
-          <span> patricia@gmail.com</span>
+          patricia@gmail.com
         </a>
       </div>
       <div class="social-links d-flex justify-content-center">
@@ -152,9 +180,5 @@
         </a>
       </p>
     </footer>
-    <script
-      data-cfasync="false"
-      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-    ></script>
   </body>
 </html>
